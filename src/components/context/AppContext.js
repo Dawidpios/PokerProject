@@ -247,7 +247,6 @@ const AppProvider = ({ children }) => {
       setCash(cash + Pool);
       setPool(0);
     } else if (PlayerHandPower == SiHandPower) {
-      console.log(`power ${PlayerHandPower} i ${SiHandPower}`);
       Game.Draw = `Remis układem ${PlayerResult}`;
       setWinner(Game.Draw);
       setCash(cash + Pool / 2);
@@ -434,8 +433,6 @@ const AppProvider = ({ children }) => {
       Game.PlayerResultat = arrResult;
       Game.PlayerHandPower = result;
       setPlayerHandPower(Game.PlayerHandPower);
-      console.log(`result to ${result}`);
-      console.log(` player power to ${Game.PlayerHandPower}`);
       setPlayerResult(Game.PlayerResultat);
     }, 100);
     setTimeout(() => {
@@ -444,7 +441,6 @@ const AppProvider = ({ children }) => {
       checkGameResult(Game.SiHand);
       Game.SiHandPower = result;
       setSiHandPower(Game.SiHandPower);
-      console.log(` si power to ${Game.SiHandPower}`);
       Game.SiResult = arrResult;
       setSiResult(Game.SiResult);
     }, 300);
