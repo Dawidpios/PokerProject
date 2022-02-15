@@ -54,13 +54,13 @@ width:40%;
 width:25%;
 };
 @media(min-width:800px){
-width:15%;
+width:20%;
 };
 @media(min-width:1000px){
-width:12%;
+width:15%;
 };
 @media(min-width:1200px){
-width:10%;
+width:14%;
 };
 `
 
@@ -78,7 +78,7 @@ width:40%;
 height:25%;
 margin-top:10%;
 @media(min-width:500px){
-    left:60%;
+    left:65%;
 }
 
 
