@@ -10,8 +10,8 @@ const Player = () => {
     return ( <PlayerSection>
         <Paragraph>Żetony:{cash}</Paragraph>
         <CardsSection>
-            <Div><IMG src={ImagesPlayer?.[0]}></IMG></Div>
-            <Div><IMG src={ImagesPlayer?.[1]}></IMG></Div>
+            <CardSlot><IMG src={ImagesPlayer?.[0]}></IMG></CardSlot>
+            <CardSlot><IMG src={ImagesPlayer?.[1]}></IMG></CardSlot>
         
         </CardsSection>
        
@@ -48,7 +48,7 @@ display: flex;
 
 `
 
-const Div = styled.div`
+const CardSlot = styled.div`
 width:40%;
 @media(min-width:500px){
 width:25%;

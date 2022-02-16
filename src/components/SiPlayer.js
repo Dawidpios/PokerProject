@@ -3,21 +3,21 @@ import { AppContext } from "./context/AppContext";
 import styled from "styled-components"
 
 
-const Si = () => {
+const SiPlayer = () => {
     const {cashSi, SiCard, ImagesSi,SiResult} = useContext(AppContext);
     return ( 
         <SiSection>
       
         <Paragraph>Żetony:{cashSi}</Paragraph>
         <CardsSection>
-        <Div className='SiCardsDiv'><IMG src={ImagesSi?.[0]}></IMG></Div>
-        <Div className='SiCardsDiv'><IMG src={ImagesSi?.[1]}></IMG></Div>
+        <CardSlot className='SiCardsDiv'><IMG src={ImagesSi?.[0]}></IMG></CardSlot>
+        <CardSlot className='SiCardsDiv'><IMG src={ImagesSi?.[1]}></IMG></CardSlot>
         </CardsSection>
      
     </SiSection> );
 }
  
-export default Si;
+export default SiPlayer;
 const SiSection = styled.section`
 width:100%;
 height:100%;
@@ -28,7 +28,7 @@ align-items:flex-start;
 position:relative;
 `
 
-const Div = styled.div`
+const CardSlot = styled.div`
 width:40%;
 opacity:0;
 @media(min-width:500px){

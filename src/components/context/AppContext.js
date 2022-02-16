@@ -124,11 +124,11 @@ const AppProvider = ({ children }) => {
   function checkGameResult(arr) {
     let reducerArrValues = [];
     let reducerArrKeys = [];
-    let checkColor = [];
+    let colorsToCheck = [];
     function reducer(arr) {
-      checkColor = [...arr];
-      checkColor = checkColor.map((e) => e[1]);
-      checkColor = checkColor.reduce(
+      colorsToCheck = [...arr];
+      colorsToCheck = colorsToCheck.map((e) => e[1]);
+      colorsToCheck = colorsToCheck.reduce(
         (acc, cur) => ((acc[cur] = acc[cur] + 1 || 1), acc),
         {}
       );
@@ -198,7 +198,7 @@ const AppProvider = ({ children }) => {
       }
       // Color
 
-      Object.values(checkColor).filter((e) => {
+      Object.values(colorsToCheck).filter((e) => {
         if (e >= 5) {
           arrResult = "Kolor";
           result = ranks.Flush;
@@ -239,7 +239,7 @@ const AppProvider = ({ children }) => {
     HandValue = "";
   }
 
-  const whoWin = () => {
+  const getWinner = () => {
     document.querySelectorAll(".SiCardsDiv").forEach(e=>e.style.opacity="1");
     if (PlayerHandPower > SiHandPower) {
       Game.PlayerWin = `Gracz wygrał układem ${PlayerResult}`;
@@ -535,7 +535,7 @@ const AppProvider = ({ children }) => {
     
 
     setTimeout(() => {
-      whoWin();
+      getWinner();
       setTimeout(() => {
         reset()
       }, 8000);

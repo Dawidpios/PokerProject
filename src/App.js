@@ -4,7 +4,7 @@ import tlo from "./images/tlo.jpg";
 import Cards from "./components/Cards";
 import Menu from "./components/Menu";
 import Player from "./components/Player";
-import Si from "./components/Si";
+import SiPlayer from "./components/SiPlayer";
 import AppProvider from "./components/context/AppContext";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     <Table>
       <MenuAndSiStyle>
         <Menu></Menu>
-        <Si></Si>
+        <SiPlayer></SiPlayer>
       </MenuAndSiStyle>
       <CardsStyle>
         <Cards></Cards>

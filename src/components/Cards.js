@@ -12,11 +12,11 @@ const {Pool} = useContext(AppContext)
       <Paragraph>Pula:{Pool}</Paragraph>
       
         <FirstRiver className="River">
-        <Div className="DivIMAGE-0"></Div>
-        <Div className="DivIMAGE-1"></Div>
-        <Div className="DivIMAGE-2"></Div>
-        <Div className="DivIMAGE-3"></Div>
-        <Div className="DivIMAGE-4"></Div>
+        <CartSlot className="DivIMAGE-0"></CartSlot>
+        <CartSlot className="DivIMAGE-1"></CartSlot>
+        <CartSlot className="DivIMAGE-2"></CartSlot>
+        <CartSlot className="DivIMAGE-3"></CartSlot>
+        <CartSlot className="DivIMAGE-4"></CartSlot>
         </FirstRiver>
       
       </SectionRiver>
@@ -59,7 +59,7 @@ font-size:1.4rem;
 margin-bottom:.9rem;
 `
 
-const Div = styled.div`
+const CartSlot = styled.div`
 width:100%;
 align-self:center;
 @media(min-width:500px){
