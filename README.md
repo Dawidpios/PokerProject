@@ -6,5 +6,5 @@
 5.You can reset by click at "Nowa gra" while u are playing </br>
 
 
-Live: 
+Live: https://dawidpios.github.io/PokerProject/
 
